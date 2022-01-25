@@ -1,0 +1,7 @@
+Taking into assumption table name as 'employee' AND 'reward';
+
+1) SELECT First_name FROM employee WHERE First_name LIKE '%n';
+
+2) SELECT * FROM employee WHERE Employee_id = (SELECT amount FROM reward WHERE amount < 5100);
+
+3) SELECT * FROM employee WHERE Joining_date <= '2019-02-25';
