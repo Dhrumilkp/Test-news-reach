@@ -18,8 +18,25 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Auth/Auth_req');
+    }
 	public function index()
 	{
 		$this->load->view('welcome_message');
+	}
+	public function fetchnews()
+	{
+		$headers = apache_request_headers();
+        if($this->Auth_req->auth_request($headers))
+        {
+			echo json_encode("reached");
+		}
+		else
+		{
+			header('HTTP/1.1 403 Forbidden');
+		}
 	}
 }

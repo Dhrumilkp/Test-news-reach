@@ -1,0 +1,14 @@
+.filter_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.dis_news_wrapper{
+    height: 600px;
+    overflow: scroll;
+}
+.new_news_loader_spinner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
