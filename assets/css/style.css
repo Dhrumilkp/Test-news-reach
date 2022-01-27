@@ -12,3 +12,12 @@
     width: 100%;
     justify-content: center;
 }
+.query_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.query_wrp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

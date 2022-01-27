@@ -15,6 +15,11 @@
 		<div class="container">
 			<h1>Let's Fetch some news</h1>
 			<div class="row mt-5">
+				<div class="query_wrapper">
+					<a href="<?php echo base_url(); ?>queries">Queries</a>
+				</div>
+			</div>
+			<div class="row mt-5">
 				<div class="col-md-12 col-lg-12">
 					<div class="card">
 						<div class="card-header">

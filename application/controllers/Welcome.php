@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Auth/Auth_req');
+		$this->load->model('Query/Query_test');
     }
 	public function index()
 	{
